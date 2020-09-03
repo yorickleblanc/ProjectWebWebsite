@@ -64,8 +64,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](http://github/images/www.cineville.nl_.png)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](https://github.com/yorickleblanc/ProjectWebWebsite/blob/master/images/www.cineville.nl_.png)
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](http://github/images/BreakdownSchetsAll)(http://github/images/BreakdownSchetsSection)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](https://github.com/yorickleblanc/ProjectWebWebsite/blob/master/images/BreakdownSchetsAll.png)(https://github.com/yorickleblanc/ProjectWebWebsite/blob/master/images/BreakdownSchetsSection.png)
