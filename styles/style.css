@@ -10,6 +10,12 @@ body {
     margin: 0;
 }
 
+h1, h2, h3, h4, h6 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
 /* MAIN */
 
 p {
@@ -49,7 +55,6 @@ section:first-of-type {
 }
 
 h1 {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5em;
     color: white;
     margin: 18px;
@@ -83,11 +88,13 @@ button:first-of-type {
 
 }
 
-/* 2e SECTION */
+/* 2e SECTION - Cinevillepas / Vitamine cineville */
 
 section:nth-of-type(2) {
     display: flex;
     flex-direction: column;
+
+
 }
 
 section:nth-of-type(2) img {
@@ -98,11 +105,12 @@ section:nth-of-type(2) img {
 }
 
 section:nth-of-type(2) article {
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 1em;
     text-align: center;
     color: #09293a;
     padding-top: 1em;
-
 }
 
 section:nth-of-type(2) h2{
@@ -115,7 +123,6 @@ section:nth-of-type(2) p{
 }
 
 h2 {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5em;
     margin: 18px;
 }
@@ -139,48 +146,54 @@ section:nth-of-type(2) article:nth-of-type(2) img{
     height: 100px;
 }
 
-/* 3e SECTION */
+/* 3e SECTION -film vd week */
 
 section:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     background: white;
     margin-top: 2em;
-    padding: 1em;
+    padding: 0;
     box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
 }
 
 h3 {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5em;
     color: black;
     margin-bottom: 0.5em;
     
 }
 
+section:nth-of-type(3) h4 {
+    margin-left: 0;
+}
+
 h4 {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 0.8em;
     color: black;
     font-weight: 600;
     margin-bottom: -0.2em;
+    margin-left: 0;
     margin-top: auto;
 }
 
 section:nth-of-type(3) img{
+    padding: 1em;
     align-self: center;
     height: auto;
     width: 100%;
 }
 
 section:nth-of-type(3) h3 {
+    color: black;
     margin-top: 0.5em;
     
 }
 
 section:nth-of-type(3) p{
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 0;
+    position: static;
+    margin: 0;
     font-family: freight-macro-pro,serif;
     font-weight: 400;
     font-style: normal;
@@ -198,23 +211,24 @@ h5 {
 
 }
 
-section:nth-of-type(3) h5{
+section:nth-of-type(3) article h5{
     display: inline-block;
     margin: 1em 0 0em 0;
 }
 
 
-/* 4e SECTION */
+/* 4e SECTION - tips */
 
-section:nth-of-type(4) {
-
+section article div {
+    position: relative;
+    
 }
 
 h3 + img {
     width: 100%;
 }
 
-section:nth-of-type(4) article {
+section article {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -222,7 +236,7 @@ section:nth-of-type(4) article {
     margin: 1em;
 }
 
-section:nth-of-type(4) h5 {
+section article div h5 {
     position: absolute;
     top: 0;
     left: 0;
@@ -230,14 +244,14 @@ section:nth-of-type(4) h5 {
 }
 
 
-section:nth-of-type(4) h3 {
+section article div h3 {
     color: white;
     position: absolute;
-    top: 36%;
+    bottom: 0em;
     left: 0.8em;
 }
 
-section:nth-of-type(4) h4 {
+section article h4 {
     margin: 0.5em 0.8em 0.5em 0.8em;
 }
 
@@ -249,23 +263,185 @@ h4 + img{
     margin: 0 0 0 0.8em;
 }
 
-section:nth-of-type(4) p {
+section article p {
     font-size: 1.3em;
     margin: 0 0.8em 0.8em 0.8em;
 
 }
 
 
+/* 5e section - Podcast */
+
+section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+}
+
+section:nth-of-type(5) img{
+    align-self: center;
+    height: auto;
+    width: 100%;
+}
+
+h6 {
+    margin: 0.5em;
+    font-size: 0.8em;
+}
+
+section:nth-of-type(5) p{
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* 6e section - Slider */
 
 
+/* 7e section - verheugfilm */
+
+section:nth-of-type(7) h5{
+    background-color: #9fd8f3;
+}
+
+/* 8e section - grid */
+
+section:nth-of-type(8) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    background: white;
+    padding: 1em;
+
+}
+
+section:nth-of-type(8) article {
+    margin: 0;
+    
+}
 
 
+section:nth-of-type(8) article p {
+    font-size: 1em;
+}
 
+section:nth-of-type(8) article img {
+    max-width: 100%;
+}
 
+/* 9e section - moet je kijken */
 
+section:nth-of-type(9) {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+}
 
+section:nth-of-type(9) img{
+    align-self: center;
+    height: auto;
+    width: 100%;
+}
 
+h6 {
+    margin: 0.5em;
+    font-size: 0.8em;
+}
 
+section:nth-of-type(9) p{
+    font-size: 1.8em;
+    margin: 0;
+}
 
+/* 10e section - Winkeltje */
 
+section:nth-of-type(10) {
+    margin-top: 2em;
+    display: flex;
+    background-color: #fa969f;
+    flex-direction: column;
+    text-align: center;
+    color: #09293a;
+    
+}
 
+section:nth-of-type(10) h2 {
+    font-size: 2.4em;
+    margin: 1em
+}
+
+section:nth-of-type(10) p {
+    font-size: 1.8em;
+    margin: 0  1em 1em;
+} 
+
+section:nth-of-type(10) img{
+    margin: 1em;
+    width: auto;
+    height: 213px;
+    align-self: center;
+}
+
+/* 11e section - laatste 2 */
+
+section:nth-of-type(11) {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+}
+
+section:nth-of-type(11) img{
+    align-self: center;
+    height: auto;
+    width: 100%;
+}
+
+section:nth-of-type(11) p{
+    font-size: 1.8em;
+    margin: 0;
+}
+
+section:nth-of-type(12) {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+}
+
+section:nth-of-type(12) img{
+    align-self: center;
+    height: auto;
+    width: 100%;
+}
+
+h6 {
+    margin: 0.5em;
+    font-size: 0.8em;
+}
+
+section:nth-of-type(12) p{
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url(/images/structuur-roze-blauw.png);
+    text-align: center;
+}
+
+footer h1 {
+        margin: 2em;
+}
