@@ -27,6 +27,16 @@ p {
 
 /* HEADER */
 
+.logoicon {
+    color: #09293a;
+}
+
+.headerlogo {
+    width: 100px;
+    height: 28px;
+    margin-top: 13px;
+}
+
 header {
     display: flex;
 }
@@ -49,7 +59,8 @@ header ul {
 
 section:first-of-type {
     display: flex;
-    background-image: url(/images/structuur-roze-blauw.png);
+    background: rgb(0,34,56);
+    background: linear-gradient(35deg, rgba(0,34,56,1) 0%, rgba(0,34,56,1) 30%, rgba(151,100,114,1) 80%, rgba(151,100,114,1) 100%);
     flex-direction: column;
     align-items: flex-end;
 }
@@ -438,7 +449,6 @@ section:nth-of-type(12) p{
 /* FOOTER */
 
 footer {
-    background-image: url(/images/structuur-roze-blauw.png);
     text-align: center;
 }
 
