@@ -24,9 +24,6 @@ p {
 
 
 
-
-
-
 /* HEADER */
 
 .logoicon {
@@ -313,6 +310,10 @@ article + div {
 }
 
 article + div button {
+    vertical-align: -6px;
+    height: 2em;
+    width: auto;
+    display: flex;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 0.8em;
     color: black;
@@ -321,6 +322,11 @@ article + div button {
     opacity: 0.6;
     
 }
+
+article + div button svg {
+}
+
+
 
 /* 5e section - Podcast */
 
