@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4, h6 {
+h1, h2, h3, h4, h6, span {
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -25,6 +25,8 @@ p {
 
 
 
+
+
 /* HEADER */
 
 .logoicon {
@@ -32,9 +34,10 @@ p {
 }
 
 .headerlogo {
-    width: 100px;
-    height: 28px;
-    margin-top: 13px;
+    width: 6.3em;
+    height: 1.8em;
+    margin: 0.5em;
+    
 }
 
 header {
@@ -68,7 +71,7 @@ section:first-of-type {
 h1 {
     font-size: 1.5em;
     color: white;
-    margin: 18px;
+    margin: 1.1em;
     padding-top: 18px;
     text-align: center;
 }
@@ -76,12 +79,12 @@ h1 {
 section:first-of-type img {
     margin: auto;
     width: auto;
-    height: 213px;
+    height: 13.3em;
     align-self: center;
 
 }
 
-button:first-of-type {
+section:first-of-type button:first-of-type {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1em;
     padding-top: 0.5em;
@@ -94,7 +97,7 @@ button:first-of-type {
     align-self: center;
     margin-bottom: 3em;
     margin-top: 1em;
-    line-height: 1;
+    line-height: 100%;
     border-radius: 3px;
 
 }
@@ -110,7 +113,7 @@ section:nth-of-type(2) {
 
 section:nth-of-type(2) img {
     width: auto;
-    height: 150px;
+    height: 9.4em;
     align-self: center;
     margin-top: 2em;
 }
@@ -135,7 +138,7 @@ section:nth-of-type(2) p{
 
 h2 {
     font-size: 1.5em;
-    margin: 18px;
+    margin: 1.1em;
 }
 
 
@@ -179,7 +182,7 @@ section:nth-of-type(3) h4 {
     margin-left: 0;
 }
 
-h4 {
+span {
     font-size: 0.8em;
     color: black;
     font-weight: 600;
@@ -203,18 +206,18 @@ section:nth-of-type(3) h3 {
 
 section:nth-of-type(3) p{
     padding: 0;
-    position: static;
     margin: 0;
     font-family: freight-macro-pro,serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.8em;
-    line-height: 34px;
+    line-height: 120%;
 
 
 }
 
-h5 {
+
+article div span {
     font-family: freight-macro-pro,serif;
     background-color: #fa969f;
     color: #09293a;
@@ -222,13 +225,23 @@ h5 {
 
 }
 
-section:nth-of-type(3) article h5{
-    display: inline-block;
+section:nth-of-type(3) article span:first-child {
     margin: 1em 0 0em 0;
+    font-family: freight-macro-pro,serif;
+    background-color: #fa969f;
+    color: #09293a;
+    padding: 0.4em;
+    display: inline-block;
 }
 
 
+
 /* 4e SECTION - tips */
+
+
+div + span {
+    margin: .5em 1em .5em 1em;
+}
 
 section article div {
     position: relative;
@@ -247,7 +260,7 @@ section article {
     margin: 1em;
 }
 
-section article div h5 {
+section article div span {
     position: absolute;
     top: 0;
     left: 0;
@@ -274,12 +287,40 @@ h4 + img{
     margin: 0 0 0 0.8em;
 }
 
+div img:first-child {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    float: left;
+    margin: 0 0.3em 0 .8em;
+}
+
+
 section article p {
     font-size: 1.3em;
     margin: 0 0.8em 0.8em 0.8em;
 
 }
 
+/* Buttons tips */
+
+article + div {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: -0.8em 1em 1em 1em;
+    padding: 0.8em;
+}
+
+article + div button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8em;
+    color: black;
+    border: none;
+    background-color: white;
+    opacity: 0.6;
+    
+}
 
 /* 5e section - Podcast */
 
@@ -313,7 +354,7 @@ section:nth-of-type(5) p{
 
 /* 7e section - verheugfilm */
 
-section:nth-of-type(7) h5{
+section:nth-of-type(7) span:first-child{
     background-color: #9fd8f3;
 }
 
@@ -335,6 +376,7 @@ section:nth-of-type(8) article {
 
 
 section:nth-of-type(8) article p {
+    margin: .5em 0 0 0;
     font-size: 1em;
 }
 
@@ -394,7 +436,7 @@ section:nth-of-type(10) p {
 section:nth-of-type(10) img{
     margin: 1em;
     width: auto;
-    height: 213px;
+    height: 13.3em;
     align-self: center;
 }
 
