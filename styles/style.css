@@ -305,7 +305,7 @@ article + div {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    margin: -0.8em 1em 1em 1em;
+    margin: -0.9em 1em 1em 1em;
     padding: 0.8em;
 }
 
@@ -345,7 +345,7 @@ section:nth-of-type(5) img{
     width: 100%;
 }
 
-h6 {
+section:nth-of-type(5) h2 {
     margin: 0.5em;
     font-size: 0.8em;
 }
@@ -496,10 +496,47 @@ section:nth-of-type(12) p{
 
 /* FOOTER */
 
+
+
 footer {
     text-align: center;
+    background-color: rgb(0,34,56);
+    background: linear-gradient(35deg, rgba(0,34,56,1) 0%, rgba(0,34,56,1) 30%, rgba(151,100,114,1) 80%, rgba(151,100,114,1) 100%);
+    padding: 1em;
+    
 }
 
 footer h1 {
-        margin: 2em;
+    margin: 0 1em 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif; 
+    margin: 0 1em 0 1em;
+}
+
+form input {
+    margin: 0.55em;
+    padding: 0.5em;
+    box-shadow: none;
+    border-style: hidden;
+    font-size: 1em;
+}
+
+input[type=text] {
+    background-color: #09293a;
+    color: gainsboro;
+}
+
+input[type=email] {
+        background-color: #09293a;
+        color: gainsboro;
+}
+
+input[type=submit]{
+    background-color: #fa969f;
+    border-radius: 3px;
 }
