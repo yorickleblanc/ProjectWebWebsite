@@ -323,9 +323,19 @@ article + div button {
     
 }
 
-article + div button svg {
+article + div button.donker {
+    vertical-align: -6px;
+    height: 2em;
+    width: auto;
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8em;
+    color: black;
+    border: none;
+    background-color: white;
+    opacity: 0;
+    
 }
-
 
 
 /* 5e section - Podcast */
