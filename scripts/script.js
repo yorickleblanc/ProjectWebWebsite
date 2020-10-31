@@ -1,10 +1,11 @@
-var deDerdeP;
+var deEersteButton;
 
-deDerdeP = document.querySelector("article + div button");
+deEersteButton = document.querySelector("article + div button");
 
-deDerdeP.addEventListener("click", veranderMezelf);
+deEersteButton.addEventListener("click", veranderMezelf);
 
 function veranderMezelf() {
 
-  deDerdeP.classList.add("donker");
+  deEersteButton.classList.toggle("donker");
 }
+

@@ -320,26 +320,20 @@ article + div button {
     border: none;
     background-color: white;
     opacity: 0.6;
+    transition: 2s;
     
 }
 
 article + div button.donker {
-    vertical-align: -6px;
-    height: 2em;
-    width: auto;
-    display: flex;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 0.8em;
-    color: black;
-    border: none;
-    background-color: black;
-    opacity: 0;
+    opacity: 1;
+    border-bottom: 2px solid black;
+    transition: 2s;
     
 }
 
-button.donker {
-    background: red;
-}
+/* Buttons Click */
+
+
 
 
 /* 5e section - Podcast */
@@ -554,3 +548,11 @@ input[type=submit]{
     background-color: #fa969f;
     border-radius: 3px;
 }
+
+/* STATES */
+
+button:focus {
+    outline-color: darkgreen;
+    
+}
+
