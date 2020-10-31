@@ -1,7 +1,10 @@
-var deButton = document.querySelector("article + div button ");
+var deDerdeP;
 
-deButton.addEventListener("click", klikkie);
+deDerdeP = document.querySelector("button");
 
-function klikkie() {
-    deButton.classList.add("donker");
+deDerdeP.addEventListener("click", veranderMezelf);
+
+function veranderMezelf() {
+
+  deDerdeP.classList.add("donker");
 }
