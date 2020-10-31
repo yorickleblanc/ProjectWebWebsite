@@ -1,6 +1,6 @@
 var deDerdeP;
 
-deDerdeP = document.querySelector("button");
+deDerdeP = document.querySelector("article + div button");
 
 deDerdeP.addEventListener("click", veranderMezelf);
 
