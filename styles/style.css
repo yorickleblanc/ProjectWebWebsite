@@ -450,20 +450,20 @@ section:nth-of-type(6) button {
 }
 
 .dagspecial1 {
-    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url('/images/spiderman.jpg');
+    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url('https://yorickleblanc.github.io/ProjectWebWebsite/images/spiderman.jpg');
     background-size: cover;
     min-height: 26em;
 }
 
 .dagspecial2 {
-    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url(/images/jamesbond.jpg);
+    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url(https://yorickleblanc.github.io/ProjectWebWebsite/images/jamesbond.jpg);
     background-size: cover;
     min-height: 26em;
 
 }
 
 .dagspecial3 {
-    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url(/images/moetjekijken.jpg);
+    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url(https://yorickleblanc.github.io/ProjectWebWebsite/images/moetjekijken.jpg);
     background-size: cover;
     min-height: 26em;
 
