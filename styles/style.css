@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+body.popup {
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, h6, span {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -26,6 +30,7 @@ p {
 
 /* HEADER */
 
+
 .logoicon {
     color: #09293a;
 }
@@ -39,6 +44,11 @@ p {
 
 header {
     display: flex;
+}
+
+header.popup{
+    display: none;
+
 }
 
 header img{
@@ -57,10 +67,10 @@ header ul {
 /* BANNER BOVEN */
 
 
-section:first-of-type {
+.eerstesection {
     display: flex;
-    background: rgb(0,34,56);
-    background: linear-gradient(35deg, rgba(0,34,56,1) 0%, rgba(0,34,56,1) 30%, rgba(151,100,114,1) 80%, rgba(151,100,114,1) 100%);
+    background: linear-gradient(35deg, rgba(0,34,56,1) 0%, rgba(0,34,56,1) 30%, rgba(151,100,114,1) 80%, rgba(151,100,114,1) 100%);
+    background-color: rgb(0,34,56);
     flex-direction: column;
     align-items: flex-end;
 }
@@ -73,7 +83,7 @@ h1 {
     text-align: center;
 }
 
-section:first-of-type img {
+.eerstesection img {
     margin: auto;
     width: auto;
     height: 13.3em;
@@ -81,7 +91,7 @@ section:first-of-type img {
 
 }
 
-section:first-of-type button:first-of-type {
+.eerstesection button:first-of-type {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1em;
     padding-top: 0.5em;
@@ -97,6 +107,10 @@ section:first-of-type button:first-of-type {
     line-height: 100%;
     border-radius: 3px;
 
+}
+
+.eerstesection button:first-of-type:focus {
+    background-color: white;
 }
 
 /* 2e SECTION - Cinevillepas / Vitamine cineville */
@@ -318,18 +332,22 @@ article + div button {
     font-size: 0.8em;
     color: black;
     border: none;
+    border-bottom: 0px;
     background-color: white;
     opacity: 0.6;
-    transition: 2s;
+    transition: 1s;
     
 }
 
-article + div button.donker {
+.buttonclicked {
     opacity: 1;
-    border-bottom: 2px solid black;
-    transition: 2s;
+    border-bottom: 1px solid black;
+    transition: 1s;
+    outline: none;
     
 }
+
+
 
 /* Buttons Click */
 
@@ -364,6 +382,111 @@ section:nth-of-type(5) p{
 }
 
 /* 6e section - Slider */
+
+section:nth-of-type(6) {
+    font-family: 'Nunito Sans', sans-serif;
+    position: relative;
+}
+
+.dagspecial1 h6{
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+}
+
+.dagspecial2 h6 {
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+}
+
+.dagspecial3 h6 {
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+}
+
+#eerstebullet {
+    background-color: white;
+}
+
+.bullets span{
+    border: 1px white solid;
+    border-radius: 50%;
+    margin: 0.5em;
+    height: 1.4em;
+    width: 1.4em;
+    display: inline-block;
+}
+
+.bulletclicked {
+    background-color: white;
+}
+
+.spiderman span:first-child {
+    font-size: 1.2em;
+    margin: 3em 0 0 1.2em;
+    font-weight: 100;
+}
+
+.spiderman span:nth-child(2) {
+    font-size: 1.6em;
+    line-height: 100%;
+    margin: 0 0 0 1em;
+}
+
+.spiderman span:nth-child(3) {
+    font-size: 1.2em;
+    margin: 1.2em;
+}
+
+section:nth-of-type(6) button {
+    margin: 1em 0 1em 1em;
+    color: white;
+    background-color: #FF000000;
+    border: 1px white solid;
+    padding: .5em;
+    font-size: 1em;
+}
+
+.dagspecial1 {
+    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url('/images/spiderman.jpg');
+    background-size: cover;
+    min-height: 26em;
+}
+
+.dagspecial2 {
+    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url(/images/jamesbond.jpg);
+    background-size: cover;
+    min-height: 26em;
+
+}
+
+.dagspecial3 {
+    background-image: linear-gradient(270deg,rgba(9,41,58,0) 0,#09293a 95%), url(/images/moetjekijken.jpg);
+    background-size: cover;
+    min-height: 26em;
+
+}
+
+.spiderman {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5em;
+    min-height: 18em;
+
+}
+
+.spiderman span {
+    color: white;
+}
+
+.flex {
+    padding-top: 1em;
+    display: flex;
+}
+
 
 
 /* 7e section - verheugfilm */
@@ -508,8 +631,8 @@ section:nth-of-type(12) p{
 
 footer {
     text-align: center;
+    background: linear-gradient(35deg, rgba(0,34,56,1) 0%, rgba(0,34,56,1) 30%, rgba(151,100,114,1) 80%, rgba(151,100,114,1) 100%);
     background-color: rgb(0,34,56);
-    background: linear-gradient(35deg, rgba(0,34,56,1) 0%, rgba(0,34,56,1) 30%, rgba(151,100,114,1) 80%, rgba(151,100,114,1) 100%);
     padding: 1em;
     
 }
@@ -552,7 +675,208 @@ input[type=submit]{
 /* STATES */
 
 button:focus {
-    outline-color: darkgreen;
+    opacity: 1;
+    transition: 1s;
+    outline: none;
+    border: 0.5px solid black;
+}
+
+button:hover {
+    opacity: 1;
+    border-bottom: 1px solid black;
+    transition: 1s;
+    outline: none;
+    }
+
+/* Pagina 2 */
+
+
+/* Pagina 2 - Section 1 */
+
+.S1 div {
+    position: relative;
+    margin-bottom: -0.5em;
     
 }
+
+.S1 div h3 {
+    color: white;
+    position: absolute;
+    bottom: 0em;
+    left: 0.8em;
+}
+
+.S1 span {
+    padding: 1em;
+    width: 100%;
+    display: block;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(0,34,56);
+    margin-bottom: 0;
+}
+
+/* Pagina 2 - Section 2 */
+
+.S2 {
+    background-color: #fa969f;
+    margin: 0;
+}
+
+.S2 p{
+    font-size: 1.2em;
+    font-family: freight-macro-pro,serif;
+    padding: 1em;
+    line-height: 150%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.S2 span {
+    color: #09293a;
+    font-family: freight-macro-pro,serif;
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    margin: 2em 1em 1em 1em;
+    border: 1px solid #09293a;
+    display: inline-block;
+    max-width: 11em;
+}
+
+/* Pagina 2 - Section 2 */
+
+.S3 {
+    background-color: #f8f991;
+    padding: 1em;
+    margin-top: 0;
+}
+
+
+
+/* Pagina 2 - Section 3 */
+
+.S4 {
+    padding: 1em;
+}
+
+.S3 a {
+    font-family: 'Nunito Sans', sans-serif;
+    border-bottom: 2px solid black;
+    color: black;
+    margin: 0;
+}
+
+/* Pagina 2 - Section 4 */
+
+
+#section5 {
+    color: white;
+    background: linear-gradient(35deg, rgba(0,34,56,1) 0%, rgba(0,34,56,1) 30%, rgba(151,100,114,1) 80%, rgba(151,100,114,1) 100%);
+    background-color: rgb(0,34,56);
+    padding: 1em;
+}
+
+#section5 h3 {
+    color: white;
+}
+
+#section5 p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 160%;
+}
+
+#section5 span {
+    color: white;
+}
+
+/* Pagina 2 - Section 5 */
+
+
+.S6 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+}
+
+.S6 img {
+    align-self: center;
+    height: auto;
+    width: 100%;
+}
+
+/* Pagina 2 -  Buttons */
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0,34,56);
+    padding: 0.8em;
+}
+
+.btn button {
+    height: 2em;
+    width: auto;
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8em;
+    color: white;
+    background-color: rgb(0,34,56);    
+    border: none;
+    border-bottom: 0px;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+
+/* Pop over full screen*/
+
+div.full {
+    display: none;
+}
+
+div.popup {
+    display: block;
+}
+
+.fullscreen {
+    background-color: #09293a;
+    z-index: 999;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.delen {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+}
+
+#deelh {
+    align-self: center;
+    color: white;
+    margin: 0.5em;
+    position: relative;
+}
+
+.delen a {
+    color: #09293a;
+    font-family:  'Nunito Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #9fd8f3;
+    margin: 0.2em 1em 0.2em 1em;
+    padding: 0.5em 1em 0.5em 1.5em;
+}
+
 
