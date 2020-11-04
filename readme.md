@@ -6,9 +6,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. www.cineville.nl 
+2. https://www.w3schools.com/
+3. https://css-tricks.com/
+4. https://www.cineville.nl/films/la-ultima-primavera
 
 
 
@@ -24,7 +25,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+-Helaas weinig gedaan sinds laatste voortgangsgesprek. Een aantal dingen besproken: 
+
+De background gradient werkt nog niet, nogmaals doorgenomen. 
+Besproken hoe ik de share button (container boven alles en scrollbar uit met overflow hidden op body. 
+
+Film vd week span bleef het gehele scherm vullen ook besproken hoe dat gefixed kan worden.
+
+Nogmaals besproken dat ik nog moet beginnen aan tweede pagina. -
 
 
 
@@ -37,6 +45,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Agenda voor meeting
 - Hoe maak ik die slider. Hoe wrap ik de tekst om die afbeelding heen bij de tips. Hoe maak in nette CSS code voor precies dezelfd elementen? -
 
+### Verslag van meeting
+
+- Besproken hoe ik de text naast de afbeelding krijg bij de tips: Float: left. Uiteindelijk geprobeert en werkend gekregen nadat ik het in een div stopte. 
+
+Besproken hoe ik de slider maak van de dagspecials.
+
+Ook de tweede pagina nog niet gemaakt, moet ik ook nog aan beginnen-
 
 ## Voortgang 1 (week 3)
 

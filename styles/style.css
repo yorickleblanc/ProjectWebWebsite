@@ -182,6 +182,10 @@ section:nth-of-type(3) {
     box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
 }
 
+section:nth-of-type(3) article {
+    margin: 0 1em 1em 1em;
+}
+
 h3 {
     font-size: 1.5em;
     color: black;
@@ -191,6 +195,11 @@ h3 {
 
 section:nth-of-type(3) h4 {
     margin-left: 0;
+}
+
+section:nth-of-type(3) div{
+    margin-bottom: 0;
+    
 }
 
 span {
@@ -203,10 +212,11 @@ span {
 }
 
 section:nth-of-type(3) img{
-    padding: 1em;
+    padding: 1em 1em 0 1em;
     align-self: center;
     height: auto;
     width: 100%;
+    margin-bottom: 0;
 }
 
 section:nth-of-type(3) h3 {
@@ -243,6 +253,7 @@ section:nth-of-type(3) article span:first-child {
     color: #09293a;
     padding: 0.4em;
     display: inline-block;
+    max-width: 9em;
 }
 
 
@@ -879,4 +890,8 @@ div.popup {
     padding: 0.5em 1em 0.5em 1.5em;
 }
 
-
+.delen svg {
+    max-height: 4em;
+    margin: auto;
+    margin-top: 3em;
+}
